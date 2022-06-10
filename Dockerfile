@@ -19,3 +19,4 @@ python manage.py createsuperuser --noinput
 EXPOSE 8000
 #Comandos para quando o contaienr iniciar
 ENTRYPOINT ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+teste
