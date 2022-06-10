@@ -13,3 +13,9 @@
 
 -> root
 -> password: 1234
+
+---
+
+##Deploy no Kubernetes
+
+# O yaml já vem com o service de Node Port configurado. Basta subir o yaml, verificar o ip do node do serviço de kubernetes e subir na porta 31750.
