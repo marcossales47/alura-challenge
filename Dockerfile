@@ -11,6 +11,7 @@ COPY . .
 #Execução dos comandos (mesma layer de imagem)
 RUN pip install --upgrade pip &&\
 pip install -r requirements.txt &&\
+sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \['*']/" setup/settings.py &&\
 python manage.py makemigrations &&\
 python manage.py migrate &&\
 python manage.py createsuperuser --noinput
