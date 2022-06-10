@@ -5,7 +5,7 @@
 
 ##Criação do container
 
-**docker run --name nome_do_container -p 8000:8000 -d 
+**docker run --name nome_do_container -p 8000:8000 -d nomedaimagem (id da imagem) 
 
 ### Não precisa criar o superuser dentro do container, na imagem já foram colocadas variáveis de ambiente com os dados simbólicos ###
 
